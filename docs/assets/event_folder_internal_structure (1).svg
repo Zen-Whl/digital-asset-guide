@@ -1,0 +1,186 @@
+<svg width="100%" viewBox="0 0 680 1100" xmlns="http://www.w3.org/2000/svg" style="background: transparent;">
+<style>
+  :root {
+    --bg: #ffffff; --bg2: #f5f4f0; --fg: #1a1a18; --fg2: #73726c; --fg3: #9c9a92;
+    --b: rgba(0,0,0,0.15);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a18; --bg2: #2c2c2a; --fg: #e8e6df; --fg2: #9c9a92; --fg3: #73726c;
+      --b: rgba(255,255,255,0.15);
+    }
+    .fill-teal-50 { fill: #085041; } .stroke-teal { stroke: #5DCAA5; }
+    .fill-amber-50 { fill: #633806; } .stroke-amber { stroke: #EF9F27; }
+    .fill-blue-50 { fill: #0C447C; } .stroke-blue { stroke: #85B7EB; }
+    .fill-green-50 { fill: #27500A; } .stroke-green { stroke: #97C459; }
+    .fill-coral-50 { fill: #712B13; } .stroke-coral { stroke: #F0997B; }
+    .fill-purple-50 { fill: #3C3489; } .stroke-purple { stroke: #AFA9EC; }
+    .fill-pink-50 { fill: #72243E; } .stroke-pink { stroke: #ED93B1; }
+    .fill-gray-50 { fill: #444441; } .stroke-gray { stroke: #B4B2A9; }
+    .fill-red-50 { fill: #791F1F; } .stroke-red { stroke: #F09595; }
+    .t-teal { fill: #9FE1CB; } .ts-teal { fill: #5DCAA5; }
+    .t-amber { fill: #FAC775; } .ts-amber { fill: #EF9F27; }
+    .t-blue { fill: #B5D4F4; } .ts-blue { fill: #85B7EB; }
+    .t-green { fill: #C0DD97; } .ts-green { fill: #97C459; }
+    .t-coral { fill: #F5C4B3; } .ts-coral { fill: #F0997B; }
+    .t-purple { fill: #CECBF6; } .ts-purple { fill: #AFA9EC; }
+    .t-pink { fill: #F4C0D1; } .ts-pink { fill: #ED93B1; }
+    .t-gray { fill: #D3D1C7; } .ts-gray { fill: #B4B2A9; }
+    .t-red { fill: #F7C1C1; } .ts-red { fill: #F09595; }
+  }
+  @media (prefers-color-scheme: light) {
+    .fill-teal-50 { fill: #E1F5EE; } .stroke-teal { stroke: #0F6E56; }
+    .fill-amber-50 { fill: #FAEEDA; } .stroke-amber { stroke: #854F0B; }
+    .fill-blue-50 { fill: #E6F1FB; } .stroke-blue { stroke: #185FA5; }
+    .fill-green-50 { fill: #EAF3DE; } .stroke-green { stroke: #3B6D11; }
+    .fill-coral-50 { fill: #FAECE7; } .stroke-coral { stroke: #993C1D; }
+    .fill-purple-50 { fill: #EEEDFE; } .stroke-purple { stroke: #534AB7; }
+    .fill-pink-50 { fill: #FBEAF0; } .stroke-pink { stroke: #993556; }
+    .fill-gray-50 { fill: #F1EFE8; } .stroke-gray { stroke: #5F5E5A; }
+    .fill-red-50 { fill: #FCEBEB; } .stroke-red { stroke: #A32D2D; }
+    .t-teal { fill: #085041; } .ts-teal { fill: #0F6E56; }
+    .t-amber { fill: #633806; } .ts-amber { fill: #854F0B; }
+    .t-blue { fill: #0C447C; } .ts-blue { fill: #185FA5; }
+    .t-green { fill: #173404; } .ts-green { fill: #3B6D11; }
+    .t-coral { fill: #4A1B0C; } .ts-coral { fill: #993C1D; }
+    .t-purple { fill: #26215C; } .ts-purple { fill: #534AB7; }
+    .t-pink { fill: #4B1528; } .ts-pink { fill: #993556; }
+    .t-gray { fill: #2C2C2A; } .ts-gray { fill: #5F5E5A; }
+    .t-red { fill: #501313; } .ts-red { fill: #A32D2D; }
+  }
+  text.title { font-family: system-ui, sans-serif; font-size: 15px; font-weight: 500; fill: var(--fg); }
+  text.subtitle { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 400; fill: var(--fg2); }
+  text.th { font-family: system-ui, sans-serif; font-size: 14px; font-weight: 500; }
+  text.ts { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 400; }
+  text.t { font-family: system-ui, sans-serif; font-size: 14px; font-weight: 400; }
+  line.arr { stroke: var(--fg3); stroke-width: 1.5; }
+  line.dash { stroke: var(--fg3); stroke-width: 0.5; stroke-dasharray: 4; }
+</style>
+
+<text class="title" x="340" y="28" text-anchor="middle">Recommended folder hierarchy per volume</text>
+<text class="subtitle" x="340" y="46" text-anchor="middle">Based on AMPAS / NARA / DAM best practices</text>
+
+<!-- Root level -->
+<rect x="40" y="66" width="600" height="44" rx="10" class="fill-gray-50 stroke-gray" stroke-width="0.5"/>
+<text class="th t-gray" x="340" y="92" text-anchor="middle">WD12TB-A (Volume root)</text>
+
+<!-- Arrows down -->
+<line x1="120" y1="110" x2="120" y2="136" class="arr" marker-end="url(#arrow)"/>
+<line x1="340" y1="110" x2="340" y2="136" class="arr" marker-end="url(#arrow)"/>
+<line x1="540" y1="110" x2="540" y2="136" class="arr" marker-end="url(#arrow)"/>
+
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<!-- Photos & Video -->
+<rect x="40" y="138" width="160" height="44" rx="8" class="fill-teal-50 stroke-teal" stroke-width="0.5"/>
+<text class="th t-teal" x="120" y="156" text-anchor="middle">01_Photo-Video</text>
+<text class="ts ts-teal" x="120" y="172" text-anchor="middle">按年/事件组织</text>
+
+<!-- Documents -->
+<rect x="255" y="138" width="170" height="44" rx="8" class="fill-amber-50 stroke-amber" stroke-width="0.5"/>
+<text class="th t-amber" x="340" y="156" text-anchor="middle">02_Documents</text>
+<text class="ts ts-amber" x="340" y="172" text-anchor="middle">个人文档资料</text>
+
+<!-- Media -->
+<rect x="470" y="138" width="170" height="44" rx="8" class="fill-purple-50 stroke-purple" stroke-width="0.5"/>
+<text class="th t-purple" x="555" y="156" text-anchor="middle">03_Media</text>
+<text class="ts ts-purple" x="555" y="172" text-anchor="middle">电影/音乐/电子书</text>
+
+<!-- Photo-Video deep structure container -->
+<line x1="120" y1="182" x2="120" y2="210" class="arr" marker-end="url(#arrow)"/>
+
+<rect x="40" y="212" width="350" height="310" rx="12" class="fill-teal-50 stroke-teal" stroke-width="0.5" fill-opacity="0.3"/>
+<text class="th t-teal" x="55" y="236">01_Photo-Video/</text>
+
+<!-- Year level -->
+<rect x="60" y="248" width="310" height="30" rx="6" class="fill-teal-50 stroke-teal" stroke-width="0.5"/>
+<text class="t t-teal" x="75" y="267">2024/</text>
+
+<!-- Event folders -->
+<rect x="80" y="290" width="260" height="30" rx="6" class="fill-blue-50 stroke-blue" stroke-width="0.5"/>
+<text class="t t-blue" x="95" y="309">20240127-李祉欢启航订婚/</text>
+
+<rect x="80" y="328" width="260" height="30" rx="6" class="fill-blue-50 stroke-blue" stroke-width="0.5"/>
+<text class="t t-blue" x="95" y="347">20240425-北京车展/</text>
+
+<rect x="80" y="366" width="260" height="30" rx="6" class="fill-blue-50 stroke-blue" stroke-width="0.5"/>
+<text class="t t-blue" x="95" y="385">20240816-号号攀岩/</text>
+
+<!-- Inside event folder -->
+<rect x="100" y="408" width="230" height="100" rx="6" class="fill-green-50 stroke-green" stroke-width="0.5" fill-opacity="0.3"/>
+<text class="ts ts-green" x="115" y="428">Inside event folder:</text>
+<text class="ts ts-green" x="115" y="446">IMG_1234.CR3  (RAW)</text>
+<text class="ts ts-green" x="115" y="462">IMG_1234.JPG  (JPEG)</text>
+<text class="ts ts-green" x="115" y="478">DJI_0042.MP4  (Video)</text>
+<text class="ts ts-green" x="115" y="494">Photos + videos together ✓</text>
+
+<!-- Documents deep structure -->
+<line x1="450" y1="182" x2="450" y2="210" class="arr" marker-end="url(#arrow)"/>
+
+<rect x="420" y="212" width="240" height="310" rx="12" class="fill-amber-50 stroke-amber" stroke-width="0.5" fill-opacity="0.3"/>
+<text class="th t-amber" x="435" y="236">02_Documents/</text>
+
+<rect x="435" y="248" width="210" height="28" rx="6" class="fill-amber-50 stroke-amber" stroke-width="0.5"/>
+<text class="ts t-amber" x="450" y="266">Finance/  财务/保险/税务</text>
+
+<rect x="435" y="284" width="210" height="28" rx="6" class="fill-amber-50 stroke-amber" stroke-width="0.5"/>
+<text class="ts t-amber" x="450" y="302">Identity/  证件/社保</text>
+
+<rect x="435" y="320" width="210" height="28" rx="6" class="fill-amber-50 stroke-amber" stroke-width="0.5"/>
+<text class="ts t-amber" x="450" y="338">Medical/  医疗记录</text>
+
+<rect x="435" y="356" width="210" height="28" rx="6" class="fill-amber-50 stroke-amber" stroke-width="0.5"/>
+<text class="ts t-amber" x="450" y="374">Work/  工作文档</text>
+
+<rect x="435" y="392" width="210" height="28" rx="6" class="fill-amber-50 stroke-amber" stroke-width="0.5"/>
+<text class="ts t-amber" x="450" y="410">Legal/  合同/法律</text>
+
+<rect x="435" y="428" width="210" height="28" rx="6" class="fill-amber-50 stroke-amber" stroke-width="0.5"/>
+<text class="ts t-amber" x="450" y="446">Education/  学习资料</text>
+
+<rect x="435" y="464" width="210" height="28" rx="6" class="fill-amber-50 stroke-amber" stroke-width="0.5"/>
+<text class="ts t-amber" x="450" y="482">Correspondence/  重要往来</text>
+
+<!-- Dashed connectors -->
+<line x1="120" y1="530" x2="120" y2="560" class="dash"/>
+<line x1="340" y1="530" x2="340" y2="560" class="dash"/>
+<line x1="540" y1="530" x2="540" y2="560" class="dash"/>
+
+<!-- More top-level categories -->
+<rect x="40" y="562" width="160" height="44" rx="8" class="fill-coral-50 stroke-coral" stroke-width="0.5"/>
+<text class="th t-coral" x="120" y="580" text-anchor="middle">04_Family</text>
+<text class="ts ts-coral" x="120" y="596" text-anchor="middle">家人朋友资料</text>
+
+<rect x="230" y="562" width="160" height="44" rx="8" class="fill-green-50 stroke-green" stroke-width="0.5"/>
+<text class="th t-green" x="310" y="580" text-anchor="middle">05_Software</text>
+<text class="ts ts-green" x="310" y="596" text-anchor="middle">程序/安装包</text>
+
+<rect x="420" y="562" width="160" height="44" rx="8" class="fill-pink-50 stroke-pink" stroke-width="0.5"/>
+<text class="th t-pink" x="500" y="580" text-anchor="middle">06_Projects</text>
+<text class="ts ts-pink" x="500" y="596" text-anchor="middle">创作/工作项目</text>
+
+<!-- Admin files -->
+<rect x="40" y="630" width="600" height="80" rx="10" class="fill-gray-50 stroke-gray" stroke-width="0.5" fill-opacity="0.3"/>
+<text class="th t-gray" x="55" y="654">Volume root admin files:</text>
+<text class="ts ts-gray" x="55" y="674">DISK_INFO.md — 磁盘身份与内容概览</text>
+<text class="ts ts-gray" x="55" y="692">inventory_YYYYMMDD.txt — 自动生成的目录清单</text>
+
+<!-- Naming conventions -->
+<rect x="40" y="734" width="600" height="170" rx="12" class="fill-blue-50 stroke-blue" stroke-width="0.5" fill-opacity="0.15"/>
+<text class="th t-blue" x="340" y="760" text-anchor="middle">Naming conventions</text>
+<text class="ts ts-blue" x="60" y="786">Volumes:    WD12TB-A, WD10TB-Photos, SG3TB-2018</text>
+<text class="ts ts-blue" x="60" y="806">Top dirs:    01_Photo-Video  02_Documents  03_Media ...</text>
+<text class="ts ts-blue" x="60" y="826">Years:       2024/</text>
+<text class="ts ts-blue" x="60" y="846">Events:      YYYYMMDD-DescriptiveEventName/</text>
+<text class="ts ts-blue" x="60" y="866">Files:       Keep original camera filenames (IMG_, DSC_, DJI_)</text>
+<text class="ts ts-blue" x="60" y="886">Docs:        YYYYMMDD-Description.ext  or  Description-v2.ext</text>
+
+<!-- Core principles -->
+<rect x="40" y="928" width="600" height="150" rx="12" class="fill-red-50 stroke-red" stroke-width="0.5" fill-opacity="0.15"/>
+<text class="th t-red" x="340" y="954" text-anchor="middle">Core principles (AMPAS / NARA)</text>
+<text class="ts ts-red" x="60" y="978">1. Originals are sacred — never rename, re-encode, or alter source files</text>
+<text class="ts ts-red" x="60" y="998">2. Event > type — group by what happened, not file format</text>
+<text class="ts ts-red" x="60" y="1018">3. Self-describing names — anyone can navigate without a manual</text>
+<text class="ts ts-red" x="60" y="1038">4. Numbered prefixes (01_, 02_) — controls sort order in any OS</text>
+<text class="ts ts-red" x="60" y="1058">5. Metadata stays with files — never strip EXIF/XMP data</text>
+</svg>
